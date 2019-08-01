@@ -1,0 +1,36 @@
+#compdef dvc
+local -a subcmds
+subcmds=( 'init:Initialize DVC in the current directory.'
+'get:Download data from DVC repository.'
+'get-url:Download or copy files from URL.'
+'destroy:Remove DVC-files, local DVC config and data cache.'
+'add:Take data files or directories under DVC control.'
+'remove:Remove DVC-file outputs.'
+'move:Rename or move a DVC controlled data file or a directory.'
+'unprotect:Unprotect data files or directories.'
+'run:Generate a stage file from a command and execute the command.'
+'repro:Check for changes and reproduce stages and dependencies.'
+'pull:Pull data files from a DVC remote storage.'
+'push:Push data files to a DVC remote storage.'
+'fetch:Fetch data files from a DVC remote storage.'
+'status:Show changed stages, compare local cache and a remote storage.'
+'gc:Collect unused data from DVC cache or a remote storage.'
+'import:Download data from DVC repository and take it under DVC control.'
+'import-url:Download or copy file from URL and take it under DVC control.'
+'config:Get or set config options.'
+'checkout:Checkout data files from cache.'
+'remote:Manage remote storage configuration.'
+'cache:Manage cache settings.'
+'metrics:Commands to add, manage, collect and display metrics.'
+'install:Install DVC git hooks into the repository.'
+'root:Relative path to the repository'"'"'s directory.'
+'lock:Lock DVC-files.'
+'unlock:Unlock DVC-files.'
+'pipeline:Manage pipelines.'
+'commit:Save changed data to cache and update DVC-files.'
+'diff:Show a diff of a DVC controlled data file or a directory.'
+'version:Show DVC version and system/environment informaion.'
+'update:Update dependencies and reproduce specified DVC-files.')
+_describe 'command' subcmds
+
+
